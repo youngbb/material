@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+:root{
+    --primary-color: #047aed;
+    --primary-secondary: #047aed;
+
+    --logo-color: #ffffff;
+    --light-color: #ffffff;
+    --dark-color: #333;
+    --lghtdark-color: #b4becb;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Navbar */
+
+.logo a{
+    color: var(--logo-color);
+}
+.navbar{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    height: 70px;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: var(--light-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: var(--light-color) solid 2px;
+}
+
+
+/* Showcase */
+
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color:var(--light-color);
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+
+}
+.showcase p{
+    margin: 20px 0;
+}
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    /*justify-self: flex-end;*/
+
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+.showcase-form input[type='text'],
+.showcase-form input[type='password']{
+    border: 0;
+    border-bottom: 1px solid var(--lghtdark-color);
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase::before, .showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: var(--light-color);
+    transform: skewY(-3deg);
+    --webkit-transform: skewY(-3deg);
+    --moz-transform: skewY(-3deg);
+    --ms-transform: skewY(-3deg);
+
+}
+
+/* stats*/
+.stats{
+    padding-top: 100px;
+
+}
+.stats .grid h3{
+    font-size: 35px;
+
+}
+.stats .grid p{
+    font-size:  20px;
+    font-weight: bold;
+}
+
+/*last*/
+.cloud .grid{
+    grid-template-columns: 4fr 3fr;
+}
+
+.cloud .grid img{
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: var(--dark-color);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
