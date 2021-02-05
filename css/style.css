@@ -47,9 +47,8 @@ img{
 
 /* Navbar */
 
-.logo a{
-    color: var(--logo-color);
-}
+
+
 .navbar{
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -70,6 +69,76 @@ img{
 .navbar a:hover{
     border-bottom: var(--light-color) solid 2px;
 }
+h1.logo a:hover{
+    border: none;
+    
+}
+
+
+/*Project Nav Bar Secondary */
+.prj-navbar{
+    display: grid;    
+    padding: 10px;
+    margin: 5px;
+}
+.prj-navbar .btn{
+    padding: 5px;
+    margin: 0 5px;
+    
+}
+
+.lg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.prj-navbar .btn:before{
+    /*plus sign*/
+    content: '\002B';
+    font-size: 30px;    
+}
+
+.more-vert::before 
+{
+    /*add three dots*/
+    content: '\2807';
+    font-size: 30px;
+    
+}
+
+.prj-status-col{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--lghtdark-color);
+    
+}
+.prj-status{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+}
+.project-list{
+    width: 100%;
+    height: 500px;
+    
+}
+.aid-tile{
+    color: var(--dark-color);
+    opacity: .7;
+
+}
+.aid-subtotal{
+    color: var(--dark-color);
+    opacity: .7;
+    font-size: 13px;
+}
+
+
+
 
 
 /* Showcase */
@@ -155,21 +224,13 @@ img{
     width: 60%;
 }
 
-
-
-
-
-
-
-
-
-
-
 .footer{
     background-color: var(--dark-color);
 
 }
 
+
+/** PROJECT PAGE **/
 
 
 

@@ -32,6 +32,25 @@
 .btn:hover{
     transform: scale(.98);
 }
+.btn-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-tranp{
+    
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--dark-color);
+    border: none;
+    
+    
+}
+.btn-tranp:focus{
+    outline: none;
+}
 
 /* Backgrounds & colored buttons */
 .bg-primary,
@@ -112,7 +131,9 @@
 .grid-3{
     grid-template-columns: repeat(3, 1fr);
 }
-
+.grid-6{
+    grid-template-columns: repeat(6, 1fr);
+}
 /*Margin*/
 .my-1{
     margin: 1rem 0;
